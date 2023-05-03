@@ -1,0 +1,20 @@
+{
+    "description": "Arcad Demo",
+    "version": "0.0.1",
+    "includePath": [
+        "FGRVSC_SRC/QPROTOSRC"
+    ],
+    "repository": "git@github.com:fgrumeau/FGRVSC.git",
+    "objlib": "&verlibfgrvsc",
+    "curlib": "*CRTDFT",
+    "extensions": {
+        "arcad": {
+            "code": "FGRVSC",
+            "libraryPrefix": "FGR",
+            "iasp": "*SYSBAS",
+            "validated": true
+        }
+    },
+    "buildCommand": "elias compile {branch}",
+    "compileCommand": "elias compile {branch} -f {filename}"
+}
